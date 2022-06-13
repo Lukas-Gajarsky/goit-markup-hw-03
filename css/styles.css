@@ -27,6 +27,7 @@ body {
   font-family: system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+    font-weight: 400;
 }
 
 hr {
@@ -211,7 +212,7 @@ ul {
 /* HEADER */
 .header {
   cursor: pointer;
-  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   padding: 25px 0;
 }
 
@@ -254,7 +255,7 @@ ul {
 }
 
 .logo-accent-footer {
-  color: white;
+  color: var(--white-color);
 }
 
 .menu-link {
@@ -313,7 +314,6 @@ address {
 /* FOOTER */
 
 .footer-address {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -322,7 +322,6 @@ address {
 
 .footer-email,
 .footer-phone {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -366,7 +365,6 @@ address {
 }
 
 .subsection-description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -393,7 +391,6 @@ address {
 }
 
 .staff-description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -413,6 +410,8 @@ address {
   letter-spacing: 0.03em;
   color: var(--black-color);
   cursor: pointer;
+  border:none;
+  padding: 6px 22px;
 }
 
 .portfolio-btn:hover,
@@ -430,7 +429,6 @@ address {
 }
 
 .pic-subtitle-describtion {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -498,16 +496,18 @@ address {
 
 footer {
   background-color: #2f303a;
+  padding: 60px 0;
+
 }
 
 .portfolio-button-section ul {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
   background-color: #fff;
   gap: 8px;
-  padding: 94px 516px 56px 495px;
+}
+.portfolio-button-section{
+  padding: 100px 0 56px;
 }
 
 .portfolio-pics ul {
@@ -515,4 +515,22 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.portfolio-pics ul li{
+  flex-basis: 370px;
+}
+
+.portfolio-pics .container div{
+  padding: 20px 21px;
+  border: 1px solid #eee;
+  border-top:none;
+}
+
+.portfolio-pics img{
+  display: block;
+}
+
+.portfolio-pics{
+  padding-bottom: 94px;
 }
